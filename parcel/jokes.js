@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+// common js exports
 // module.exports = {
 //   getJoke: function () {
 //     return fetch('http://api.icndb.com/jokes/random')
@@ -15,13 +16,14 @@ import axios from 'axios';
 //   }
 // }
 
-module.exports = {
+// ES 6 exports w/ axios
+export const jokes = {
   getJoke: () => {
     return new Promise((resolve, reject) => {
       axios.get('http://api.icndb.com/jokes/random')
         .then(res => {
           resolve(res.data.value.joke);
-        })
+        });
     });
   }
 }

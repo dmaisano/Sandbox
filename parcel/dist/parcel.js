@@ -1692,11 +1692,6 @@ module.exports = require('./lib/axios');
 },{"./lib/axios":5}],3:[function(require,module,exports) {
 "use strict";
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.jokes = undefined;
-
 var _axios = require("axios");
 
 var _axios2 = _interopRequireDefault(_axios);
@@ -1711,22 +1706,21 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //   }
 // }
 
-const jokes = exports.jokes = {
-  getJoke: function () {
-    return fetch('http://api.icndb.com/jokes/random').then(data => data.value.joke);
+// export const jokes = {
+//   getJoke: function () {
+//     return fetch('http://api.icndb.com/jokes/random')
+//       .then(data => data.value.joke)
+//   }
+// }
+
+module.exports = {
+  getJoke: () => {
+    return new Promise((resolve, reject) => {
+      _axios2.default.get('http://api.icndb.com/jokes/random').then(res => {
+        resolve(res.data.value.joke);
+      });
+    });
   }
-
-  // module.exports = {
-  //   getJoke: () => {
-  //     return new Promise((resolve, reject) => {
-  //       axios.get('http://api.icndb.com/jokes/random')
-  //         .then(res => {
-  //           resolve(res.data.value.joke);
-  //         })
-  //     });
-  //   }
-  // }
-
 };
 },{"axios":4}],2:[function(require,module,exports) {
 const jokes = require('./jokes');

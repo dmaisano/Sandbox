@@ -121,6 +121,7 @@ packages:
   /bcrypt-pbkdf/1.0.1:
     dependencies:
       tweetnacl: 0.14.5
+    dev: false
     optional: true
     resolution:
       integrity: sha1-Y7xdy2EzG5K8Bf1SiVPDNGKgb40=
@@ -350,6 +351,7 @@ packages:
   /ecc-jsbn/0.1.1:
     dependencies:
       jsbn: 0.1.1
+    dev: false
     optional: true
     resolution:
       integrity: sha1-D8c6ntXw1Tw4GTOYUj735UN3dQU=
@@ -1364,6 +1366,7 @@ packages:
   /strip-ansi/3.0.1:
     dependencies:
       ansi-regex: 2.1.1
+    dev: false
     engines:
       node: '>=0.10.0'
     resolution:

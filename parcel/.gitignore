@@ -12,9 +12,11 @@
 node_modules/
 .tmp/
 
-# Personal Ignore Extensions
-.stylelintrc
+# Personal Preferences
+./dist/
+stylelintrc
 package-lock.json
+npm.debug-log
 pnpm.debug-log
 
 # OS or Editor folders

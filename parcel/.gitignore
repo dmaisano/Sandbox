@@ -13,7 +13,7 @@ node_modules/
 .tmp/
 
 # Personal Preferences
-./dist/
+dist/
 stylelintrc
 package-lock.json
 npm.debug-log

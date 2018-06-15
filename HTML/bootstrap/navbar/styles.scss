@@ -1,0 +1,29 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+@import 'https://fonts.googleapis.com/css?family=VT323';
+body {
+  font-family: 'Roboto', sans-serif
+}
+
+body {
+  font-family: 'VT323'
+}
+
+.navbar {
+  display: flex;
+  padding: 0;
+  border-bottom: 5px solid #FFB500;
+  &-brand {
+    padding: 0;
+  }
+  .logo {
+    padding: .3rem .7rem;
+    background-color: #351C15;
+    border-right: .5rem solid #795A47;
+  }
+  p {
+    -webkit-font-smoothing: antialiased;
+    margin: 0 0 0 .5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+}

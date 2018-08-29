@@ -70,7 +70,7 @@ h1 {
 
 .split.left {
   left: 0;
-  background: url('./img/designer.jpg') center center no-repeat;
+  background: url("./img/designer.jpg") center center no-repeat;
   background-size: cover;
 }
 
@@ -84,7 +84,7 @@ h1 {
 
 .split.right {
   right: 0;
-  background: url('./img/programmer.png') center center no-repeat;
+  background: url("./img/programmer.png") center center no-repeat;
   background-size: cover;
 }
 
@@ -124,7 +124,7 @@ h1 {
   z-index: 2;
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   h1 {
     font-size: 2rem;
   }
@@ -134,7 +134,7 @@ h1 {
   }
 }
 
-@media(max-height: 700px) {
+@media (max-height: 700px) {
   .button {
     top: 70%;
   }

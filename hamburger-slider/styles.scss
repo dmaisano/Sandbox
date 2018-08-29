@@ -2,7 +2,6 @@ $items: 4;
 $transition-duration: 0.5s;
 $transition-delay: 0.05s;
 
-
 /* Basic styles */
 
 * {
@@ -31,7 +30,6 @@ a {
   overflow: hidden;
 }
 
-
 /* Toggle functionality */
 
 // To hide the checkbox
@@ -42,7 +40,6 @@ a {
 }
 
 #toggle:focus {
-
   & ~ .toggle-container .button-toggle {
     box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
   }
@@ -94,7 +91,9 @@ a {
       @for $i from 1 through $items {
         &:nth-child(#{$i}) {
           $delay: ($items - $i) * $transition-delay;
+
           transition-delay: $delay;
+
           &:before {
             transition-delay: $delay;
           }
@@ -117,7 +116,6 @@ a {
     }
   }
 }
-
 
 /* Toggle button */
 
@@ -162,12 +160,12 @@ a {
   }
 }
 
-
 /* Menu */
 
 .nav {
   display: inline-block;
   margin: 25px 25px 20px;
+
   // Don't want pointer-events as menu is closed
   pointer-events: none;
   transition: $transition-duration;
@@ -193,7 +191,9 @@ a {
   @for $i from 1 through $items {
     &:nth-child(#{$i}) {
       $delay: ($i - 1) * $transition-delay;
+
       transition-delay: $delay;
+
       &:before {
         transition-delay: $delay;
       }
@@ -230,7 +230,6 @@ a {
     transition: $transition-duration;
   }
 }
-
 
 /* Dummy content */
 

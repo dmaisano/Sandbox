@@ -1,0 +1,9 @@
+{
+  "name": "fall-schedule",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}

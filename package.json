@@ -1,0 +1,8 @@
+{
+  "name": "Sandbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dmaisano/Sandbox.git",
+  "author": "Domenico Maisano <dev.dmaisano@gmail.com>",
+  "license": "MIT"
+}

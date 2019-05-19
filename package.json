@@ -6,6 +6,7 @@
 	"author": "Domenico Maisano <dev.dmaisano@gmail.com>",
 	"license": "MIT",
 	"devDependencies": {
-		"node-sass": "^4.9.4"
+		"node-sass": "^4.9.4",
+		"sass": "^1.20.1"
 	}
 }
